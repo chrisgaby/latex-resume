@@ -11,6 +11,8 @@
 
 \def\arrow#1{\pspicture[shift=2pt](#1,0)\psline{->}(#1,0)\endpspicture}
 
+\usepackage{enumitem}
+
 \usepackage{pstricks}
 
 \usepackage{fontawesome}
