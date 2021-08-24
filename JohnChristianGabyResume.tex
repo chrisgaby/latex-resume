@@ -1,0 +1,164 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv3} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{~Microbiology~},
+        \textbf{Bio-}\\\textbf{Informatics},
+        \textbf{Meta-}\\\textbf{Proteomics},
+        \textbf{~Ecology~},
+        \textbf{~Computational~}\\\textbf{Biology},
+        \textbf{Meta-}\\\textbf{Genomics},
+        \textbf{~Genomics~}
+    }
+}
+
+% Programming skill bars
+%\programming{{C $\textbullet$ C++  $\textbullet$ R / 3}, {JavaScript $\textbullet$ SQL $\textbullet$ \large \LaTeX / 3.5}, {Scala $\textbullet$ Java $\textbullet$ Python / 5}}
+
+% Projects text
+\education{
+\textbf{Ph.D., Microbiology} \\
+Minors: Genomics and Ecology \\
+Cornell University \\
+2013 Ithaca, NY
+
+\textbf{B.S., Biology} \\
+The University of Tennessee \\
+2002 Knoxville, TN
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g.\
+
+\cvname{John Christian Gaby} % Your name
+\cvjobtitle{ Research Microbiologist } % Job
+% title/career
+
+\cvlinkedin{/in/john-gaby-56525410b/}
+\cvgithub{chrisgaby}
+\cvsite{chrisgaby.github.io} % Personal website
+\aboutme{John Christian Gaby is a Research Microbiologist with the Genomics and Bioinformatics Research Unit (GBRU) of the United States Department of Agriculture (USDA) Agricultural Research Service (ARS). His research interests include microbial ecology, biological nitrogen fixation, the nitrogen cycle, biogas production, genomics, metagenomics, metaproteomics, bioinformatics, and computational biology. He currently works on the development of machine learning models to predict prokaryotic phenotype from genome sequence data.}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+ 
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{2020 -}
+		{Present}
+        {Research Microbiologist Research Associate}
+        {\href{https://www.ars.usda.gov/southeast-area/stoneville-ms/genomics-and-bioinformatics-research/}{USDA ARS GBRU}}
+        {}
+        {\begin{itemize}
+        \item \textbf{Topic}: Machine Learning Prediction using Genomic Data        
+        \item \textbf{Tools}: Python, Pandas, NumPy, Matplotlib, R, SQL, Jupyter, Docker, NextFlow, Git, MASH, Dashing, GitHub, Sequence Read Archive (SRA), NCBI Assembly Database, Google Cloud, UNIX Shell
+        \end{itemize}}
+        \\
+	\twentyitem
+    	{2016 -}
+		{2020}
+        {Postdoctoral Researcher}
+        {\href{https://www.nmbu.no/}{The Norwegian University of Life Sciences (NMBU)}}
+        {}
+        {
+        {\begin{itemize}
+        \item \textbf{Topic}: Multi-omics Analysis of Microbial Function in Digestive Ecosystems (Biogas Reactors and Intestinal Microbiomes)   
+        \item \textbf{Methods}: MetaGenomics, MetaProteomics, Amplicon Sequencing
+        \item \textbf{Tools}: R, R Markdown, DADA2, PhyloSeq, VEGAN, ggplot2, cowplot, GitHub, MaxQuant, Perseus, MetaSPAdes, MegaHIT, MetaBAT, MaxBin, InterProScan, Prokka, Prodigal, HMMer, MetaGeneMark, GTDB-Tk, CheckM, fastANI, fastQC, MASH, Trimmomatic, metaQUAST, HPC Cluster, Slurm, UNIX Shell
+    \end{itemize}}
+        }
+    \\   
+    \twentyitem
+   		{2013 -}
+		{2016}
+        {Postdoctoral Researcher}
+        {\href{https://www.gatech.edu/}{The Georgia Institute of Technology}}
+        {}
+        {
+        {\begin{itemize}
+        \item \textbf{Topic}: Nitrogen Fixation in Terrestrial and Marine Ecosystems
+	\item \textbf{Methods}: Amplicon Sequencing, qPCR, Acetylene Reduction, Selective Enrichment and Isolation, Ribosomal RNA Intergenic Spacer Analysis (RISA)
+        \item \textbf{Tools}: R, Plymouth Routines In Multivariate Ecological Research
+    \end{itemize}}
+        }
+     \\
+     \twentyitem
+   		{2011 -}
+		{2012}
+        {Fulbright US Student Fellow}
+        {\href{https://www.corpogen.org/}{Corporacion Corpogen}}
+        {}
+        {
+        {\begin{itemize}
+        \item \textbf{Topic}: Nitrogen Cycling in the Colombian Paramo
+	\item \textbf{Methods}: DNA Extraction, qPCR
+        \item \textbf{Tools}: NCBI Genbank Database, Arb
+    \end{itemize}}
+    	}
+    \\   
+    \twentyitem
+   		{2005 -}
+		{2011}
+        {Graduate Research Assistant}
+        {\href{https://www.cornell.edu/}{Cornell University}}
+        {}
+        {
+        \begin{itemize}
+        \item \textbf{Topic}: The Diversity and Ecology of Nitrogen-fixing Bacteria
+	\item \textbf{Methods}: PCR, qPCR, Sangar Sequencing, \textsuperscript{15}N\textsubscript{2} Stable Isotope Assays of N\textsubscript{2}-fixation Rate, Nitrogen Mineralization Rate Assays, Soil Bulk Density Analysis, Soil Carbon Content Analysis by Loss on Ignition, Soil Moisture Analysis
+        \item \textbf{Tools}: NCBI Genbank Database, Arb, R, EMBOSS, UNIX Shell
+    \end{itemize}
+        }
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{Publications, 5 Selected of 17 Total}
+\textbf{925 citations} in Google Scholar as of August 5, 2021\\
+Peer reviewed articles: 6 first author, 9 co-author, 1 corresponding author\\
+Book chapters: 1 first author
+
+1. Michalak, L., \textbf{Gaby, J.C.}, Lagos, L., Leanti La Rosa, S., Hvidsten, T.R., Tétard-Jones, C., Willats, W.G.T., Terrapon, N., Lombard, V., Henrissat, B., Dröge, J., Arntzen, M., Hagen, L., Øverland, M., Pope, P., and Westereng, B. (2020) Microbiota-directed fibre activates both targeted and secondary metabolic shifts in the distal gut. \textit{Nat Commun} 11 (1): 1-15. 
+
+2. \textbf{Gaby, J.C.}, Zamanzadeh, M., and Horn, S.J. (2017) The effect of temperature and retention time on methane production and microbial community composition in staged anaerobic digesters fed with food waste. \textit{Biotechnol Biofuels} 10: 302.
+
+3. \textbf{Gaby, J.C.} and Buckley, D. H. (2014). A comprehensive aligned \textit{nifH} gene database: a multipurpose tool for studies of nitrogen-fixing bacteria. \textit{Database: The Journal of Biological Databases and Curation}, 2014, bau001.
+
+4. \textbf{Gaby, J.C.} and Buckley, D.H. (2012) A Comprehensive Evaluation of PCR Primers to Amplify the \textit{nifH} gene of Nitrogenase. \textit{PLoS ONE} 7(7): e42149.
+
+5. \textbf{Gaby, J.C.} and Buckley, D.H. (2011) A global census of nitrogenase diversity. \textit{Environ Microbiol} 13: 1790-1799. \vspace{2mm}
+\end{document}
