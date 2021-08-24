@@ -7,3 +7,7 @@ This repository contains the files required to generate John Chrisitan Gaby's La
 The original `Twenty Seconds Resume/CV` by Carmine Spagnuolo may be found at his Github repository [spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex).
 
 The modified version may be downloaded from [latextemplates.com](https://www.latextemplates.com/template/twenty-seconds-resumecv).
+
+## Generating the Resume
+
+The command to generate the resume in BASH is `xelatex JohnChristianGabyResume.tex JohnChristianGabyResume.pdf`.
