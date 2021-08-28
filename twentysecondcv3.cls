@@ -30,14 +30,16 @@
 \usepackage{enumitem}
 \setlist[itemize]{leftmargin=*}
 
-\RequirePackage[hidelinks]{hyperref}
+\RequirePackage[linkcolor=green]{hyperref}
 \hypersetup{
     pdftitle={},
     pdfauthor={},
     pdfsubject={},
     pdfkeywords={},
-    colorlinks=false,           % no lik border color
-    allbordercolors=white       % white border color for all
+    colorlinks=true,
+    linkbordercolor=green,
+    linkcolor=green,
+    allbordercolors=green       % white border color for all
 }
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
@@ -190,7 +192,7 @@
         \vspace{4mm}
     {\LARGE\color{pblue}\cvname}
 
-    \vspace{2mm}
+    \vspace{0mm}
 
     %------------------------------------------------
     
@@ -198,7 +200,7 @@
 
     %------------------------------------------------
     
-    \vspace{1mm}
+    \vspace{0mm}
     \renewcommand{\arraystretch}{2}
     \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{6cm}}
       \ifthenelse{\equal{\cvnumberphone}{}}{}{
@@ -264,7 +266,7 @@
 
 	%------------------------------------------------
 
-        \vspace{2mm}
+        \vspace{0mm}
         \profilesection{Knowledge}{2.5cm}
     
         {\large \textbf{Domains}}
@@ -273,7 +275,7 @@
 
 	%------------------------------------------------
 
-        \vspace{2mm}
+        \vspace{0mm}
         \profilesection{About Me}{3cm}
 
 	\aboutme
