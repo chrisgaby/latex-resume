@@ -8,6 +8,11 @@ The original `Twenty Seconds Resume/CV` by Carmine Spagnuolo may be found at his
 
 The modified version may be downloaded from [latextemplates.com](https://www.latextemplates.com/template/twenty-seconds-resumecv).
 
-## Generating the Resume
+## Generating the PDF Resume File
 
-The command to generate the resume in BASH is `xelatex JohnChristianGabyResume.tex JohnChristianGabyResume.pdf`.
+The following 4 commands must be executed in BASH in the order listed to produce the pdf resume output:
+
+1. `xelatex JohnChristianGabyResume`
+2. `bibtex JohnChristianGabyResume`
+3. `xelatex JohnChristianGabyResume`
+4. `xelatex JohnChristianGabyResume`
