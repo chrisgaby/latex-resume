@@ -280,21 +280,26 @@
 
 % Command to create the rounded boxes around the first three letters of section titles
 \newcommand*\round[2]{%
-	\tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle, rounded corners, inner sep=1.6pt, minimum size=5.5mm, text height=3.6mm, fill=#2,#2,text=white](char){#1};%
+	\tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle, rounded corners, inner sep=1.6pt, minimum size=5.5mm, text height=3.5mm, fill=#2,#2,text=white](char){#1};%
 }
+
+%\def\@sectioncolor#1#2#3{%
+%	{%
+%		\color{pblue} #1#2#3%
+%	}%
+%}
 
 \def\@sectioncolor#1#2#3{%
 	{%
-		\color{pblue} #1#2#3%
+		\color{headercolor} #1#2#3%
 	}%
 }
-
 
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
 	{%
-		\LARGE\headingfont\color{headercolor}%
-		\@sectioncolor #1%
+		\LARGE\headingfont\color{pblue}
+		\@sectioncolor #1
 	}
   \par\vspace{1mm}
 }
@@ -366,7 +371,7 @@
 %	 MARGINS AND LINKS
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[left=7.6cm,top=0.1cm,right=1cm,bottom=0.1cm,nohead,nofoot]{geometry}
+\RequirePackage[left=7.6cm,top=0cm,right=1cm,bottom=0cm,nohead,nofoot]{geometry}
 
 
 \usepackage{smartdiagram}
