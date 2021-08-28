@@ -141,8 +141,8 @@
 \newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
 \newcommand{\cvlinkedin}[1]{\renewcommand{\cvlinkedin}{#1}}
 \newcommand{\cvgithub}[1]{\renewcommand{\cvgithub}{#1}}
-%\newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
-%\newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
+\newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
+\newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
 \newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
 \newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
@@ -198,17 +198,37 @@
 
     %------------------------------------------------
     
-    \vspace{3mm}
+    \vspace{1mm}
     \renewcommand{\arraystretch}{2}
-    \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{5cm}}
-      %\ifthenelse{\equal{\cvnumberphone}{}}{}{
-      %		{$
-      %        \begin{array}{l}
-      %        \hspace{4mm} \Huge \textnormal{\faMobile} 
-      %        \end{array}
-      %        $} 
-      %      & \cvnumberphone\\}
+    \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{6cm}}
+      \ifthenelse{\equal{\cvnumberphone}{}}{}{
+      		{$
+              \begin{array}{l}
+              \hspace{4mm} \Huge \textnormal{\faMobile} 
+              \end{array}
+              $} 
+            & \cvnumberphone\\}
             
+	%\ifthenelse{\equal{\cvdate}{}}{}{\textsc{\Large\icon{\Info}} & \cvdate\\}
+
+      \ifthenelse{\equal{\cvdate}{}}{}{
+            {$
+              \begin{array}{l}
+              \hspace{3mm} \huge \textnormal{\textcolor{test}{\Info}}
+              \end{array}
+              $} 
+            & \cvdate \\}
+
+      %\ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\Letter}} & \cvaddress\\}
+
+      \ifthenelse{\equal{\cvaddress}{}}{}{
+            {$
+              \begin{array}{l}
+              \hspace{3mm} \huge \textnormal{\textcolor{test}{\Letter}}
+              \end{array}
+              $} 
+            & \cvaddress \\}
+
       \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
             {$
               \begin{array}{l}
@@ -216,21 +236,22 @@
               \end{array}
               $} 
             & \href{http://\cvsite}{\cvsite} \\}
-     % \ifthenelse{\equal{\cvmail}{}}{}{
-     %       {$
-     %         \begin{array}{l}
-     %         \hspace{2.5mm} \huge \textnormal{\textcolor{yt}{\faEnvelopeO}}
-     %         \end{array}
-     %         $} 
-     %       & \href{mailto:\cvmail}{\cvmail} \\}
+
+      \ifthenelse{\equal{\cvmail}{}}{}{
+            {$
+              \begin{array}{l}
+              \hspace{2.5mm} \huge \textnormal{\textcolor{yt}{\faEnvelopeO}}
+              \end{array}
+              $} 
+            & \href{mailto:\cvmail}{\cvmail} \\}
       
        \ifthenelse{\equal{\cvlinkedin}{}}{}{
             {$
               \begin{array}{l}
               \hspace{3mm} \huge \textnormal{\textcolor{linkedin}{\faLinkedin}}
               \end{array}
-              $} & \href{https://www.linkedin.com\cvlinkedin}{\cvlinkedin} \\
-            }  
+              $} & \href{https://www.linkedin.com\cvlinkedin}{\cvlinkedin} \\}
+ 
         \ifthenelse{\equal{\cvgithub}{}}{}{
             {$
               \begin{array}{l}
@@ -243,17 +264,17 @@
 
 	%------------------------------------------------
 
-    \vspace{3mm}
-    \profilesection{Knowledge}{2.5cm}
+        \vspace{2mm}
+        \profilesection{Knowledge}{2.5cm}
     
-    {\large \textbf{Domains}}
+        {\large \textbf{Domains}}
 
 	\skills
 
 	%------------------------------------------------
 
-    \vspace{3mm}
-    \profilesection{About Me}{3cm}
+        \vspace{2mm}
+        \profilesection{About Me}{3cm}
 
 	\aboutme
         
@@ -265,7 +286,7 @@
 
 		 %\programming
          
-        \vspace{3mm}
+        \vspace{2mm}
         \profilesection{Education}{2.9cm} 
         
         \education
