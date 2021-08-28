@@ -314,14 +314,14 @@
 
 \def\@sectioncolor#1#2#3{%
 	{%
-		\color{headercolor} #1#2#3%
+		\color{pblue} #1#2#3%
 	}%
 }
 
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
 	{%
-		\LARGE\headingfont\color{pblue}
+		\LARGE\headingfont\color{headercolor}
 		\@sectioncolor #1
 	}
   \par\vspace{1mm}
