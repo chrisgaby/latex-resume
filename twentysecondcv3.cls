@@ -216,7 +216,7 @@
       \ifthenelse{\equal{\cvdate}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{3mm} \huge \textnormal{\textcolor{test}{\Info}}
+              \hspace{3mm} \vspace{-5mm} \huge \textnormal{\textcolor{test}{\faInfoCircle}}
               \end{array}
               $} 
             & \cvdate \\}
