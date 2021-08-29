@@ -17,7 +17,7 @@
 
 \usepackage{fontawesome}
 \RequirePackage{tikz}
-\RequirePackage{xcolor}
+%\RequirePackage{xcolor}
 \RequirePackage[absolute,overlay]{textpos}
 \RequirePackage{ragged2e}
 \RequirePackage{etoolbox}
@@ -226,7 +226,7 @@
       \ifthenelse{\equal{\cvaddress}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{3mm} \huge \textnormal{\textcolor{test}{\Letter}}
+              \hspace{3mm} \huge \textnormal{\textcolor{test}{\faHome}}
               \end{array}
               $} 
             & \cvaddress \\}
