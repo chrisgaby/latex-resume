@@ -30,17 +30,17 @@
 \usepackage{enumitem}
 \setlist[itemize]{leftmargin=*}
 
-\RequirePackage[linkcolor=green]{hyperref}
-\hypersetup{
-    pdftitle={},
-    pdfauthor={},
-    pdfsubject={},
-    pdfkeywords={},
-    colorlinks=true,
-    linkbordercolor=green,
-    linkcolor=green,
-    allbordercolors=green       % white border color for all
-}
+\RequirePackage[linkcolor=materiallime]{hyperref}
+%\hypersetup{
+%    pdftitle={},
+%    pdfauthor={},
+%    pdfsubject={},
+%    pdfkeywords={},
+%    colorlinks=true,
+%    linkbordercolor=materiallime,
+%    linkcolor=materiallime,
+%    allbordercolors=materiallime       % white border color for all
+%}
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax

@@ -40,6 +40,28 @@
       \endlist}
 \makeatother
 
+\makeatletter
+\Hy@AtBeginDocument{%
+  \def\@pdfborder{0 0 1}% Overrides border definition set with colorlinks=true
+  \def\@pdfborderstyle{/S/U/W 1}% Overrides border style set with colorlinks=true
+                                % Hyperlink border style will be underline of width 1pt
+}
+\makeatother
+
+\usepackage{xcolor}            % specify colors by name (e.g. "red")
+\usepackage{hyperref}          % clickable URls and cross-references
+\hypersetup{
+    colorlinks=true,
+    urlcolor=materialindigo,
+%    pdfborderstyle={/S/U/W 1}, % underline links instead of boxes
+%    linkbordercolor=red,       % color of internal links
+%    citebordercolor=green,     % color of links to bibliography
+%    filebordercolor=magenta,   % color of file links
+    pdftitle={The Resume of John Christian Gaby},
+    pdfauthor={John Christian Gaby},
+    urlbordercolor=materialindigo        % color of external links
+}
+
 %\AtEveryBibitem{\clearfield{month}}
 %\AtEveryCitekey{\clearfield{month}}
 
