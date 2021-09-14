@@ -4,7 +4,7 @@
 
 %----------------------------------------------------------------------------------------
 %	 REQUIRED PACKAGES
-%-----------------------------------------------------------------------	-----------------
+%----------------------------------------------------------------------------------------
 
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[sfdefault]{ClearSans}
@@ -137,7 +137,7 @@
 \pgfmathsetlength{\imagewidth}{5cm}
 \pgfmathsetlength{\imagescale}{\imagewidth/600}
 
-\newcommand{\profilesection}[2]{\vspace{8pt}{\color{black!80} \huge #1 \rule[0.15\baselineskip]{#2}{1pt}}}
+\newcommand{\profilesection}[2]{\vspace{8pt}{\color{black!80} \huge #1 \rule[0.2\baselineskip]{#2}{1pt}}}
 
 % Define custom commands for CV info
 \newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
@@ -185,7 +185,7 @@
 
   %------------------------------------------------
 
-  \begin{textblock}{6}(0.5, 0.2)
+  \begin{textblock}{6}(0.5, 0)
 
     %------------------------------------------------
     
@@ -319,12 +319,12 @@
 }
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
+  %\par\vspace{\parskip}
 	{%
 		\LARGE\headingfont\color{headercolor}
 		\@sectioncolor #1
 	}
-  \par\vspace{1mm}
+  %\par\vspace{0mm}
 }
 
 \renewcommand{\subsection}[1]{
@@ -360,13 +360,13 @@
 % }
 
 \newcommand{\twentyitem}[6]{%
-	#1&\parbox[t]{0.83\textwidth}{%
+	#1&\parbox[t]{0.875\textwidth}{%
 		\textbf{#3}% 
 		\hfill%
 		{\footnotesize#4}%
         }\\%
-    #2&\parbox[t]{0.83\textwidth}{%
-		\ifblank{#5}{}{#5 \\}
+    #2&\parbox[t]{0.875\textwidth}{%
+		\ifblank{#5}{}{#5}
 		#6%
 	}\\
 }
@@ -394,7 +394,7 @@
 %	 MARGINS AND LINKS
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[left=7.6cm,top=0cm,right=1cm,bottom=0cm,nohead,nofoot]{geometry}
+\RequirePackage[left=7.9cm,top=0cm,right=1cm,bottom=0cm,nohead,nofoot]{geometry}
 
 
 \usepackage{smartdiagram}

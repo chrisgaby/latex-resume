@@ -48,6 +48,8 @@
 }
 \makeatother
 
+\usepackage{multicol}
+\usepackage{ragged2e}
 \usepackage{xcolor}            % specify colors by name (e.g. "red")
 \usepackage{hyperref}          % clickable URls and cross-references
 \hypersetup{
@@ -67,6 +69,8 @@
 
 %\usepackage[sorting=ydnt]{biblatex}
 %\usepackage{datetime}
+
+\AtBeginEnvironment{multicols}{\RaggedRight}
 
 % Command for printing skill overview bubbles
 \newcommand\skills{ 
@@ -125,86 +129,140 @@ The University of Tennessee \\
 \makeprofile % Print the sidebar
  
 %----------------------------------------------------------------------------------------
+%         SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+\setlength\multicolsep{0pt}
+\begin{multicols}{4}
+%[
+%The following list of laboratory and computational skills were acquired over 16 years of PhD and post doctoral research.
+%]
+\textbf{Programming}\\
+Python \& Jupyter\\
+R \& RMarkdown\\
+SQL\\
+UNIX Shell\\
+Docker\\
+NextFlow\\
+\LaTeX\\
+Markdown\\
+Git \& GitHub
+\columnbreak
+
+\textbf{Bioinformatics}
+%\begin{itemize}[nosep]
+\textbf{HPC and Cloud}\\
+Slurm, Google Cloud Platform\\
+\textbf{Homology Search}\\
+BLAST, Diamond, HMMer\\
+\textbf{Read Mapping}\\
+BowTie,BWA-MEM\\
+\textbf{Assembly}\\
+SPAdes, MegaHIT\\
+\textbf{Genome Binning}\\
+MaxBin, metaBAT\\
+\textbf{Annotation}\\
+Prodigal, GeneMark\\
+\textbf{Databases}\\
+NCBI Assembly, Genbank. SRA, nifH, Silva rRNA\\
+MASH \& Dashing
+%\end{itemize}
+\columnbreak
+
+\textbf{Methodologies}\\
+Machine Learning\\
+%Statistical Learning
+%Pandas, NumPy, Matplotlib
+MetaGenomics, MetaProteomics, Amplicon Sequencing\\
+%DADA2, PhyloSeq, VEGAN, ggplot2, cowplot
+%MaxQuant, Perseus
+%InterProScan, Prokka
+%GTDB-Tk, CheckM, fastANI, fastQC
+%Trimmomatic, metaQUAST
+%Plymouth Routines In Multivariate Ecological Research
+qPCR, Acetylene Reduction, Selective Enrichment and Isolation, Ribosomal RNA Intergenic Spacer Analysis (RISA)
+%Sangar Sequencing, \textsuperscript{15}N\textsubscript{2} Stable Isotope Assays of N\textsubscript{2}-fixation Rate, Nitrogen Mineralization Rate Assays, Soil Bulk Density Analysis, Soil Carbon Content Analysis by Loss on Ignition, Soil Moisture Analysis
+%Arb, EMBOSS
+
+\end{multicols}
+
+%----------------------------------------------------------------------------------------
 %	 EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\section{Experience}
-
+\section{Experience}\\
 \begin{twenty} % Environment for a list with descriptions
 \twentyitem
     	{2020 -}
 		{Present}
         {Research Microbiologist Research Associate}
         {\href{https://www.ars.usda.gov/southeast-area/stoneville-ms/genomics-and-bioinformatics-research/}{USDA ARS GBRU}}
-        {}
-        {\begin{itemize}
-        \item \textbf{Topic}: Machine Learning Prediction using Genomic Data        
-        \item \textbf{Tools}: Python, Pandas, NumPy, Matplotlib, R, SQL, Jupyter, Docker, NextFlow, Git, MASH, Dashing, GitHub, Sequence Read Archive (SRA), NCBI Assembly Database, Google Cloud, UNIX Shell
-        \end{itemize}}
-        \\
-	\twentyitem
+        {Machine Learning Prediction using Genomic Data}\\
+
+    \twentyitem
     	{2016 -}
 		{2020}
         {Postdoctoral Researcher}
         {\href{https://www.nmbu.no/}{The Norwegian University of Life Sciences (NMBU)}}
-        {}
-        {
-        {\begin{itemize}
-        \item \textbf{Topic}: Multi-omics Analysis of Microbial Function in Digestive Ecosystems (Biogas Reactors and Intestinal Microbiomes)   
-        \item \textbf{Methods}: MetaGenomics, MetaProteomics, Amplicon Sequencing
-        \item \textbf{Tools}: R, R Markdown, DADA2, PhyloSeq, VEGAN, ggplot2, cowplot, GitHub, MaxQuant, Perseus, MetaSPAdes, MegaHIT, MetaBAT, MaxBin, InterProScan, Prokka, Prodigal, HMMer, MetaGeneMark, GTDB-Tk, CheckM, fastANI, fastQC, MASH, Trimmomatic, metaQUAST, HPC Cluster, Slurm, UNIX Shell
-    \end{itemize}}
-        }
-    \\   
+        {Functional Multi-omics of Biogas Reactors and Gut Microbiomes}\\
+
     \twentyitem
-   		{2013 -}
+   	{2013 -}
 		{2016}
         {Postdoctoral Researcher}
         {\href{https://www.gatech.edu/}{The Georgia Institute of Technology}}
-        {}
-        {
-        {\begin{itemize}
-        \item \textbf{Topic}: Nitrogen Fixation in Terrestrial and Marine Ecosystems
-	\item \textbf{Methods}: Amplicon Sequencing, qPCR, Acetylene Reduction, Selective Enrichment and Isolation, Ribosomal RNA Intergenic Spacer Analysis (RISA)
-        \item \textbf{Tools}: R, Plymouth Routines In Multivariate Ecological Research
-    \end{itemize}}
-        }
-     \\
-     \twentyitem
-   		{2011 -}
-		{2012}
-        {Fulbright US Student Fellow}
-        {\href{https://www.corpogen.org/}{Corporacion Corpogen}}
-        {}
-        {
-        {\begin{itemize}
-        \item \textbf{Topic}: Nitrogen Cycling in the Colombian Paramo
-	\item \textbf{Methods}: DNA Extraction, qPCR
-        \item \textbf{Tools}: NCBI Genbank Database, Arb
-    \end{itemize}}
-    	}
-    \\   
+        {Nitrogen Fixation in Terrestrial and Marine Ecosystems}\\
+
     \twentyitem
-   		{2005 -}
+   	{2011 -}
+		{2012}
+        {\href{https://us.fulbrightonline.org/}{Fulbright United States Student} Fellow}
+        {\href{https://www.corpogen.org/}{Corporacion Corpogen}}
+        {Nitrogen Cycling in the Colombian Paramo}\\
+
+    \twentyitem
+   	{2005 -}
 		{2011}
-        {Graduate Research Assistant}
+        {Graduate Researcher}
         {\href{https://www.cornell.edu/}{Cornell University}}
-        {}
-        {
-        \begin{itemize}
-        \item \textbf{Topic}: The Diversity and Ecology of Nitrogen-fixing Bacteria
-	\item \textbf{Methods}: PCR, qPCR, Sangar Sequencing, \textsuperscript{15}N\textsubscript{2} Stable Isotope Assays of N\textsubscript{2}-fixation Rate, Nitrogen Mineralization Rate Assays, Soil Bulk Density Analysis, Soil Carbon Content Analysis by Loss on Ignition, Soil Moisture Analysis
-        \item \textbf{Tools}: NCBI Genbank Database, Arb, R, EMBOSS, UNIX Shell
-    \end{itemize}
-        }
-        
+        {The Diversity and Ecology of Nitrogen-fixing Bacteria}\\
+
+    \twentyitem
+   	{2003 -}
+		{2005}
+        {\href{https://www.peacecorps.gov/}{United States Peace Corps} Volunteer}
+        {Tougouzefa, Ouallam, Niger, West Africa}
+        {Agriculture and Natural Resources Management Group}\\
+
+    \twentyitem
+   	{2002}
+		{}
+        {Research Assistant}
+        {\href{https://www.utk.edu/}{The University of Tennessee}}
+        {\textit{Mycobacterium ulcerans}}\\
+
+    \twentyitem
+   	{2001}
+		{}
+        {\href{https://www.hhmi.org/}{HHMI} Summer Research Fellow}
+        {\href{https://www.pitt.edu/}{University of Pittsburgh}}
+        {Genetics of Alternative Cobamide Utilization in \textit{Salmonella}}\\
+
+    \twentyitem
+        {2000}
+		{}
+        {\href{https://www.energy.gov/}{DOE} Energy Research Undergraduate Laboratory Fellow}
+        {\href{https://www.ornl.gov/}{ORNL}}
+        {Fluorescence-based Biosensor Development}
+
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
 %----------------------------------------------------------------------------------------
 %	 PUBLICATIONS
 %----------------------------------------------------------------------------------------
-\section{Publications, 5 Selected of 17 Total}
+\section{Publications, 5 Selected of 17 Total}\\
 \textbf{941 citations} according to \href{https://scholar.google.com/citations?user=bgdnUn8AAAAJ&hl=en}{my Google Scholar page} as of August 28, 2021\\
 Peer reviewed articles: 6 first author, 9 co-author, 1 corresponding author
 %Book chapters: 1 first author
