@@ -16,3 +16,11 @@ The following 4 commands must be executed in BASH in the order listed to produce
 2. `bibtex JohnChristianGabyResume`
 3. `xelatex JohnChristianGabyResume`
 4. `xelatex JohnChristianGabyResume`
+
+## Ubuntu Packages
+
+On a fresh installation of Ubuntu 22.04.1 LTS, the following packages may need installation in order to fulfill document compilation dependencies.
+
+1. `sudo apt install texlive-xetex`
+2. `sudo apt install texlive-fonts-extra`
+3. `sudo apt-get install -y texlive-pstricks`
